@@ -1,0 +1,584 @@
+/* ============================================================
+   【上半部分】Style Settings 插件配置
+   ============================================================ */
+
+/* @settings
+name: 🎨 干杯
+id: comfort-theme
+settings:
+    - id: preset-section
+      title: 🌓 一键切换配色预设
+      type: heading
+      level: 2
+      collapsed: false
+    
+    - id: light-theme-preset
+      title: 浅色模式预设
+      type: class-select
+      default: light-claude
+      options:
+        - label: 🤖 Claude
+          value: light-claude
+        - label: 🟣 Linear
+          value: light-linear
+        - label: ⚫ Vercel
+          value: light-vercel
+        - label: 🟠 Gruvbox
+          value: light-gruvbox
+        - label: 🌲 Everforest
+          value: light-everforest
+        - label: 🌹 Rosé Pine
+          value: light-rosepine
+        - label: ☀️ Solarized
+          value: light-solarized
+        - label: 🧊 Nord
+          value: light-nord
+        - label: 🌸 Catppuccin
+          value: light-catppuccin
+        - label: 🤖 OpenAI
+          value: light-openai
+    
+    - id: dark-theme-preset
+      title: 深色模式预设
+      type: class-select
+      default: dark-claude
+      options:
+        - label: 🤖 Claude
+          value: dark-claude
+        - label: 🟣 Linear
+          value: dark-linear
+        - label: ⚫ Vercel
+          value: dark-vercel
+        - label: 🟠 Gruvbox
+          value: dark-gruvbox
+        - label: 🌲 Everforest
+          value: dark-everforest
+        - label: 🌹 Rosé Pine
+          value: dark-rosepine
+        - label: ☀️ Solarized
+          value: dark-solarized
+        - label: 🧊 Nord
+          value: dark-nord
+        - label: 🌸 Catppuccin
+          value: dark-catppuccin
+        - label: 🤖 OpenAI
+          value: dark-openai
+
+    - id: typography-section
+      title: 📝 排版与正文
+      type: heading
+      level: 2
+      collapsed: false
+    
+    - id: font-text-size
+      title: 正文字号
+      type: variable-number-slider
+      default: 16
+      min: 12
+      max: 22
+      step: 1
+      format: px
+    
+    - id: line-height-normal
+      title: 行高
+      type: variable-number-slider
+      default: 1.8
+      min: 1.2
+      max: 2.5
+      step: 0.05
+    
+    - id: file-line-width
+      title: 文本最大宽度
+      type: variable-number-slider
+      default: 880
+      min: 600
+      max: 1200
+      step: 10
+      format: px
+    
+    - id: p-spacing
+      title: 段落间距
+      type: variable-number-slider
+      default: 0.9
+      min: 0.3
+      max: 1.8
+      step: 0.05
+      format: rem
+    
+    - id: list-spacing
+      title: 列表项间距
+      type: variable-number-slider
+      default: 0.3
+      min: 0.05
+      max: 0.8
+      step: 0.05
+      format: rem
+
+    - id: heading-size-section
+      title: 🔤 标题字号与字重
+      type: heading
+      level: 2
+      collapsed: false
+    
+    - id: h1-size
+      title: H1 字号
+      type: variable-number-slider
+      default: 1.6
+      min: 1.0
+      max: 2.8
+      step: 0.05
+      format: em
+    - id: h1-weight
+      title: H1 字重
+      type: variable-number-slider
+      default: 700
+      min: 300
+      max: 900
+      step: 50
+    
+    - id: h2-size
+      title: H2 字号
+      type: variable-number-slider
+      default: 1.35
+      min: 0.9
+      max: 2.5
+      step: 0.05
+      format: em
+    - id: h2-weight
+      title: H2 字重
+      type: variable-number-slider
+      default: 650
+      min: 300
+      max: 900
+      step: 50
+    
+    - id: h3-size
+      title: H3 字号
+      type: variable-number-slider
+      default: 1.18
+      min: 0.8
+      max: 2.2
+      step: 0.05
+      format: em
+    - id: h3-weight
+      title: H3 字重
+      type: variable-number-slider
+      default: 600
+      min: 300
+      max: 900
+      step: 50
+    
+    - id: h4-size
+      title: H4 字号
+      type: variable-number-slider
+      default: 1.05
+      min: 0.7
+      max: 2.0
+      step: 0.05
+      format: em
+    - id: h4-weight
+      title: H4 字重
+      type: variable-number-slider
+      default: 600
+      min: 300
+      max: 900
+      step: 50
+    
+    - id: h5-size
+      title: H5 字号
+      type: variable-number-slider
+      default: 0.95
+      min: 0.6
+      max: 1.8
+      step: 0.05
+      format: em
+    - id: h5-weight
+      title: H5 字重
+      type: variable-number-slider
+      default: 600
+      min: 300
+      max: 900
+      step: 50
+    
+    - id: h6-size
+      title: H6 字号
+      type: variable-number-slider
+      default: 0.85
+      min: 0.5
+      max: 1.6
+      step: 0.05
+      format: em
+    - id: h6-weight
+      title: H6 字重
+      type: variable-number-slider
+      default: 600
+      min: 300
+      max: 900
+      step: 50
+
+    - id: ui-section
+      title: ✨ 界面微调
+      type: heading
+      level: 2
+      collapsed: false
+    
+    - id: status-bar-opacity
+      title: 状态栏透明度
+      type: variable-number-slider
+      default: 0.4
+      min: 0
+      max: 1
+      step: 0.05
+*/
+
+
+/* ============================================================
+   【下半部分】CSS 样式代码
+   ============================================================ */
+
+
+/* ==============================
+   第1块：body — 所有变量默认值
+
+   说明：这是页面的"总开关"，所有变量的默认值都在这里定义。
+         当用户没有选择任何预设时，使用这些默认值。
+         默认使用 Claude 配色方案
+
+    主题色HSL修改这三个值，链接、标签、按钮、选中、引用块等所有元素同步变化
+   ============================== */
+
+body {
+  /* 排版 */
+  --line-height-normal: 1.8;      /* 行高倍数，适合长文阅读 */
+  --font-text-size: 16px;         /* 正文字号基础大小 */
+  --file-line-width: 880px;       /* 最大宽度，防止阅读疲劳 */
+  --list-spacing: 0.3rem;         /* 列表项上下间距 */
+  --p-spacing: 0.9rem;            /* 段落间距，增加呼吸感 */
+
+  /* 标题字号 */
+  --h1-size: 1.6em;               /* 一级标题，最大最突出 */
+  --h2-size: 1.35em;              /* 二级标题 */
+  --h3-size: 1.18em;              /* 三级标题 */
+  --h4-size: 1.05em;              /* 四级标题，略大于正文 */
+  --h5-size: 0.95em;              /* 五级标题，略小于正文 */
+  --h6-size: 0.85em;              /* 六级标题，最小 */
+
+  /* 标题字重 */
+  --h1-weight: 700;               /* 一级标题，最粗 */
+  --h2-weight: 650;               /* 二级标题 */
+  --h3-weight: 600;               /* 三级标题 */
+  --h4-weight: 600;               /* 四级标题 */
+  --h5-weight: 600;               /* 五级标题 */
+  --h6-weight: 600;               /* 六级标题 */
+
+  /* 默认：Claude 暖调橙棕 */
+  --light-bg-main: #f7f5f0;       --light-bg-alt: #ece8e0;
+  --dark-bg-main: #1c1917;        --dark-bg-alt: #141210;
+  --accent-h-light: 25;           --accent-s-light: 60%;  --accent-l-light: 40%;
+  --accent-h-dark: 25;            --accent-s-dark: 55%;  --accent-l-dark: 55%;
+  --h1-color-light: #3d2c1a;      --h2-color-light: #5a3f28;
+  --h3-color-light: #7a5a3f;      --h4-color-light: #9a7a5f;
+  --h5-color-light: #b89a80;      --h6-color-light: #d4baa5;
+  --h1-color-dark: #e8c9a0;       --h2-color-dark: #dbb88a;
+  --h3-color-dark: #c9a87a;       --h4-color-dark: #b89870;
+  --h5-color-dark: #a88860;       --h6-color-dark: #987850;
+
+  --status-bar-opacity: 0.4;      /* 0=透明，1=不透明 */
+}
+
+
+/* ==============================
+   第2块：预设配色 — 10套有设计理念的方案
+
+   【设计逻辑说明】
+   每套配色的决定依据：
+   1. 背景色 → 来自每个配色方案的官方/社区设计主背景
+   2. 主题色 HSL → 来自每个配色方案的标志性强调色
+   3. 标题颜色 → 在背景色和主题色之间做渐变，保证层次感
+   4. 深色模式 → 用官方深色背景 + 同色系稍亮的主题色
+   5. 微调 → 根据视觉反馈调整饱和度/明度，保证可读性
+
+   核心原则：保留每个配色的设计语言，不做"乱搭"。
+   ============================== */
+
+/* ===== 浅色预设 ===== */
+
+/* 🤖 Claude — 暖调橙棕 / Anthropic 官方 / AI陪伴感的温暖表达 / 适用场景：阅读、写作、长时间使用 */
+body.light-claude {
+  --light-bg-main: #f7f5f0;       --light-bg-alt: #ece8e0;
+  --accent-h-light: 25;           --accent-s-light: 60%;  --accent-l-light: 40%;
+  --h1-color-light: #3d2c1a;      --h2-color-light: #5a3f28;
+  --h3-color-light: #7a5a3f;      --h4-color-light: #9a7a5f;
+  --h5-color-light: #b89a80;      --h6-color-light: #d4baa5;
+}
+
+/* 🟣 Linear — 极简紫 / Linear 官方 / 冷酷精准的工程师审美 / 适用场景：开发者工具、项目管理 */
+body.light-linear {
+  --light-bg-main: #f5f5f5;       --light-bg-alt: #ebebeb;
+  --accent-h-light: 235;          --accent-s-light: 60%;  --accent-l-light: 55%;
+  --h1-color-light: #1a1a1a;      --h2-color-light: #2d2d2d;
+  --h3-color-light: #4a4a4a;      --h4-color-light: #6b6b6b;
+  --h5-color-light: #8a8a8a;      --h6-color-light: #aaaaaa;
+}
+
+/* ⚫ Vercel — 黑白精准 / Vercel 官方 / 颜色只为功能服务 / 适用场景：展示、设计、部署平台 */
+body.light-vercel {
+  --light-bg-main: #fafafa;       --light-bg-alt: #f0f0f0;
+  --accent-h-light: 212;          --accent-s-light: 90%;  --accent-l-light: 48%;
+  --h1-color-light: #1a1a1a;      --h2-color-light: #2d2d2d;
+  --h3-color-light: #4a4a4a;      --h4-color-light: #6b6b6b;
+  --h5-color-light: #8a8a8a;      --h6-color-light: #aaaaaa;
+}
+
+/* 🟠 Gruvbox — 复古暖色 / Vim 经典 / 向复古终端美学致敬 / 适用场景：编程、笔记、复古风格爱好者 */
+body.light-gruvbox {
+  --light-bg-main: #fbf1c7;       --light-bg-alt: #ebdbb2;
+  --accent-h-light: 30;           --accent-s-light: 60%;  --accent-l-light: 45%;
+  --h1-color-light: #3c3836;      --h2-color-light: #504945;
+  --h3-color-light: #665c54;      --h4-color-light: #7c6f64;
+  --h5-color-light: #928374;      --h6-color-light: #a89984;
+}
+
+/* 🌲 Everforest — 自然柔绿 / 社区护眼 / 在自然中寻找平静 / 适用场景：长时间阅读、自然风格爱好者 */
+body.light-everforest {
+  --light-bg-main: #f5f0e6;       --light-bg-alt: #e8e2d6;
+  --accent-h-light: 145;          --accent-s-light: 40%;  --accent-l-light: 35%;
+  --h1-color-light: #2d353b;      --h2-color-light: #3b454c;
+  --h3-color-light: #4f5a5f;      --h4-color-light: #697a7e;
+  --h5-color-light: #859a9e;      --h6-color-light: #a6b7bc;
+}
+
+/* 🌹 Rosé Pine — 玫瑰粉 / 社区柔和 / 宁静浪漫的粉紫色调 / 适用场景：设计审美、柔和风格爱好者 */
+body.light-rosepine {
+  --light-bg-main: #faf4ed;       --light-bg-alt: #f2e9e1;
+  --accent-h-light: 300;          --accent-s-light: 35%;  --accent-l-light: 60%;
+  --h1-color-light: #575279;      --h2-color-light: #6e6a86;
+  --h3-color-light: #797593;      --h4-color-light: #9893a8;
+  --h5-color-light: #b5b1c0;      --h6-color-light: #d1cdd8;
+}
+
+/* ☀️ Solarized — 科学护眼 / Ethan Schoonover / 基于CIELAB色彩空间精确计算 / 适用场景：追求科学配色、精确色彩关系 */
+body.light-solarized {
+  --light-bg-main: #fdf6e3;       --light-bg-alt: #eee8d5;
+  --accent-h-light: 195;          --accent-s-light: 70%;  --accent-l-light: 35%;
+  --h1-color-light: #073642;      --h2-color-light: #1a4b5a;
+  --h3-color-light: #2d6070;      --h4-color-light: #4a7a8a;
+  --h5-color-light: #6a94a4;      --h6-color-light: #8ab0be;
+}
+
+/* 🧊 Nord — 北极蓝 / 社区经典 / 来自北极的宁静与冷静 / 适用场景：专注、编程、冷色风格爱好者 */
+body.light-nord {
+  --light-bg-main: #eceff4;       --light-bg-alt: #e5e9f0;
+  --accent-h-light: 200;          --accent-s-light: 60%;  --accent-l-light: 45%;
+  --h1-color-light: #2e3440;      --h2-color-light: #3b4252;
+  --h3-color-light: #4c566a;      --h4-color-light: #6a7a8a;
+  --h5-color-light: #8a9aaa;      --h6-color-light: #aabaca;
+}
+
+/* 🌸 Catppuccin — 温柔粉彩 / 社区流行 / 低饱和度，缓解视觉疲劳 / 适用场景：缓解视觉疲劳、柔和风格爱好者 */
+body.light-catppuccin {
+  --light-bg-main: #eff1f5;       --light-bg-alt: #e6e9ef;
+  --accent-h-light: 345;          --accent-s-light: 40%;  --accent-l-light: 55%;
+  --h1-color-light: #4c4f69;      --h2-color-light: #5c5f77;
+  --h3-color-light: #6c6f85;      --h4-color-light: #7c7f93;
+  --h5-color-light: #9ca0b0;      --h6-color-light: #bcc0cc;
+}
+
+/* 🤖 OpenAI — 现代AI / OpenAI 官方 / AI产品的现代科技感 / 适用场景：现代AI产品风格爱好者 */
+body.light-openai {
+  --light-bg-main: #f8f8f8;       --light-bg-alt: #e8e8e8;
+  --accent-h-light: 220;          --accent-s-light: 70%;  --accent-l-light: 55%;
+  --h1-color-light: #1a1a2e;      --h2-color-light: #2d2d4a;
+  --h3-color-light: #4a4a66;      --h4-color-light: #6b6b85;
+  --h5-color-light: #8a8aa0;      --h6-color-light: #aaaabc;
+}
+
+
+/* ===== 深色预设 ===== */
+
+/* 🤖 Claude — 暖调橙棕（深色版） */
+body.dark-claude {
+  --dark-bg-main: #1c1917;        --dark-bg-alt: #141210;
+  --accent-h-dark: 25;            --accent-s-dark: 55%;  --accent-l-dark: 55%;
+  --h1-color-dark: #e8c9a0;       --h2-color-dark: #dbb88a;
+  --h3-color-dark: #c9a87a;       --h4-color-dark: #b89870;
+  --h5-color-dark: #a88860;       --h6-color-dark: #987850;
+}
+
+/* 🟣 Linear — 极简紫（深色版） */
+body.dark-linear {
+  --dark-bg-main: #0a0a0f;        --dark-bg-alt: #15151f;
+  --accent-h-dark: 235;           --accent-s-dark: 60%;  --accent-l-dark: 55%;
+  --h1-color-dark: #c8c8f0;       --h2-color-dark: #b0b0e0;
+  --h3-color-dark: #9898d0;       --h4-color-dark: #8080c0;
+  --h5-color-dark: #6868b0;       --h6-color-dark: #5050a0;
+}
+
+/* ⚫ Vercel — 黑白精准（深色版） */
+body.dark-vercel {
+  --dark-bg-main: #0a0a0a;        --dark-bg-alt: #151515;
+  --accent-h-dark: 212;           --accent-s-dark: 90%;  --accent-l-dark: 48%;
+  --h1-color-dark: #e0e0e0;       --h2-color-dark: #c0c0c0;
+  --h3-color-dark: #a0a0a0;       --h4-color-dark: #808080;
+  --h5-color-dark: #606060;       --h6-color-dark: #404040;
+}
+
+/* 🟠 Gruvbox — 复古暖色（深色版） */
+body.dark-gruvbox {
+  --dark-bg-main: #282828;        --dark-bg-alt: #1d2021;
+  --accent-h-dark: 30;            --accent-s-dark: 50%;  --accent-l-dark: 55%;
+  --h1-color-dark: #ebdbb2;       --h2-color-dark: #d5c4a1;
+  --h3-color-dark: #bdae93;       --h4-color-dark: #a89984;
+  --h5-color-dark: #928374;       --h6-color-dark: #7c6f64;
+}
+
+/* 🌲 Everforest — 自然柔绿（深色版） */
+body.dark-everforest {
+  --dark-bg-main: #272e33;        --dark-bg-alt: #1e2428;
+  --accent-h-dark: 145;           --accent-s-dark: 40%;  --accent-l-dark: 45%;
+  --h1-color-dark: #d3c6aa;       --h2-color-dark: #b6c8b0;
+  --h3-color-dark: #98b89a;       --h4-color-dark: #7aa884;
+  --h5-color-dark: #5c9870;       --h6-color-dark: #3e885e;
+}
+
+/* 🌹 Rosé Pine — 玫瑰粉（深色版） */
+body.dark-rosepine {
+  --dark-bg-main: #191724;        --dark-bg-alt: #1f1d2e;
+  --accent-h-dark: 300;           --accent-s-dark: 35%;  --accent-l-dark: 60%;
+  --h1-color-dark: #e0def4;       --h2-color-dark: #c4b0d0;
+  --h3-color-dark: #a898b8;       --h4-color-dark: #8a7a9a;
+  --h5-color-dark: #6a5a7a;       --h6-color-dark: #4a3a5a;
+}
+
+/* ☀️ Solarized — 科学护眼（深色版） */
+body.dark-solarized {
+  --dark-bg-main: #002b36;        --dark-bg-alt: #073642;
+  --accent-h-dark: 195;           --accent-s-dark: 70%;  --accent-l-dark: 45%;
+  --h1-color-dark: #93a1a1;       --h2-color-dark: #839496;
+  --h3-color-dark: #657b83;       --h4-color-dark: #586e75;
+  --h5-color-dark: #4a6268;       --h6-color-dark: #3c565a;
+}
+
+/* 🧊 Nord — 北极蓝（深色版） */
+body.dark-nord {
+  --dark-bg-main: #2e3440;        --dark-bg-alt: #242932;
+  --accent-h-dark: 200;           --accent-s-dark: 60%;  --accent-l-dark: 55%;
+  --h1-color-dark: #d8dee9;       --h2-color-dark: #b0bcc9;
+  --h3-color-dark: #8899aa;       --h4-color-dark: #607788;
+  --h5-color-dark: #385566;       --h6-color-dark: #203344;
+}
+
+/* 🌸 Catppuccin — 温柔粉彩（深色版） */
+body.dark-catppuccin {
+  --dark-bg-main: #1e1e2e;        --dark-bg-alt: #181825;
+  --accent-h-dark: 345;           --accent-s-dark: 40%;  --accent-l-dark: 65%;
+  --h1-color-dark: #cdd6f4;       --h2-color-dark: #b8c0e0;
+  --h3-color-dark: #a0aac8;       --h4-color-dark: #8894b0;
+  --h5-color-dark: #707e98;       --h6-color-dark: #586880;
+}
+
+/* 🤖 OpenAI — 现代AI（深色版） */
+body.dark-openai {
+  --dark-bg-main: #0a0a12;        --dark-bg-alt: #14141f;
+  --accent-h-dark: 220;           --accent-s-dark: 70%;  --accent-l-dark: 55%;
+  --h1-color-dark: #c8d0e8;       --h2-color-dark: #a8b8d8;
+  --h3-color-dark: #8898c8;       --h4-color-dark: #6878b8;
+  --h5-color-dark: #4858a8;       --h6-color-dark: #283898;
+}
+
+
+/* ==============================
+   第3块：应用到 Obsidian 界面
+
+   说明：把你定义的变量"转接"给 Obsidian 官方变量。
+         Obsidian 只认官方变量（--background-primary、--accent-h 等），
+         不认你的自定义变量（--light-bg-main、--accent-h-light 等）。
+         所以必须通过这里做一层"翻译"，你的配色才能生效。
+         这是你的颜色进入 Obsidian 的"大门"。
+         
+   ============================== */
+
+.theme-light {
+  --background-primary: var(--light-bg-main);
+  --background-secondary: var(--light-bg-main);
+  --background-secondary-alt: var(--light-bg-alt);
+  --h1-color: var(--h1-color-light);
+  --h2-color: var(--h2-color-light);
+  --h3-color: var(--h3-color-light);
+  --h4-color: var(--h4-color-light);
+  --h5-color: var(--h5-color-light);
+  --h6-color: var(--h6-color-light);
+  --accent-h: var(--accent-h-light);
+  --accent-s: var(--accent-s-light);
+  --accent-l: var(--accent-l-light);
+  --active-line-bg: rgba(0, 0, 0, 0.03);
+}
+
+.theme-dark {
+  --background-primary: var(--dark-bg-main);
+  --background-secondary: var(--dark-bg-main);
+  --background-secondary-alt: var(--dark-bg-alt);
+  --h1-color: var(--h1-color-dark);
+  --h2-color: var(--h2-color-dark);
+  --h3-color: var(--h3-color-dark);
+  --h4-color: var(--h4-color-dark);
+  --h5-color: var(--h5-color-dark);
+  --h6-color: var(--h6-color-dark);
+  --accent-h: var(--accent-h-dark);
+  --accent-s: var(--accent-s-dark);
+  --accent-l: var(--accent-l-dark);
+  --active-line-bg: rgba(255, 255, 255, 0.04);
+}
+
+
+/* ==============================
+   第4块：UI 细节增强
+   ============================== */
+
+/* .cm-active.cm-line — 编辑模式下光标所在行的背景高亮 */
+.cm-active.cm-line {
+  background-color: var(--active-line-bg);   /* 当前行高亮 */
+  border-radius: 4px;                        /* 圆角更柔和 */
+}
+
+/* .markdown-rendered p — 阅读模式下的段落 */
+/* .cm-line — 编辑模式下的行 */
+.markdown-rendered p,
+.cm-line {
+  text-align: justify;                       /* 两端对齐 */
+  text-justify: inter-ideograph;             /* 中文优化 */
+}
+
+/* .cm-formatting — Markdown 语法符号（#、*、-、[] 等） */
+.cm-formatting {
+  opacity: 0.5 !important;                   /* 淡化语法符号，减少视觉噪音 */
+}
+
+/* .markdown-rendered blockquote — 引用块 */
+.markdown-rendered blockquote {
+  border-left-width: 4px;                    /* 左边框粗细 */
+  padding-left: 16px;                        /* 内边距 */
+  margin-left: 0;                            /* 对齐 */
+}
+
+/* .status-bar — 底部状态栏 */
+.status-bar {
+  opacity: var(--status-bar-opacity);        /* 透明度由滑块控制 */
+  border: none;                              /* 去掉边框 */
+}
+.status-bar:hover {
+  opacity: 1;                                /* 悬停恢复不透明 */
+}
+
+/* .markdown-rendered img — 图片居中 */
+.markdown-rendered img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .markdown-rendered thead tr th — 表头背景略深 + 文字加粗 */
+.markdown-rendered thead tr th {
+  background-color: var(--background-secondary-alt) !important;
+  font-weight: 600 !important;
+}
