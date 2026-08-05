@@ -1,7 +1,7 @@
 {
-  "name": "干杯",
+  "name": "cheers",
   "version": "1.0.0",
   "minAppVersion": "0.16.0",
   "author": "jdjshhc",
-  "css": "干杯.css"
+  "css": "cheers.css"
 }
