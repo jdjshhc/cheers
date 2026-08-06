@@ -26,4 +26,4 @@
 
 [霞鹭文楷](https://github.com/lxgw/LxgwWenKai)
 
-## 已适配style settings
+## 已适配 Style Settings
