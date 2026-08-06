@@ -1,9 +1,8 @@
 # cheers
 
-希望大家用得开心舒服
-这款主题很简单，基本延用了默认主题的设计风格，简单调整了下排版跟颜色，没有过多的设置选项，开箱即用。
+这款主题，基本延用了默认主题的设计风格，简单调整了下排版跟颜配色，没有过多的设置选项，开箱即用。
 
-## 里面有20种配色供大家选择
+## 里面有10套配色供大家选择
 
 ### 深色
 
@@ -28,5 +27,3 @@
 [霞鹭文楷](https://github.com/lxgw/LxgwWenKai)
 
 ## 已适配style settings
-
-<img width="468" height="710" alt="image" src="https://github.com/user-attachments/assets/f3f8738b-2943-4cd2-bd61-7f7b9fc45355" />
